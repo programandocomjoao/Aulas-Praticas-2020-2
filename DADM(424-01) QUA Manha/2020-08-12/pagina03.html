@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 03</title>
+		<script>
+		function calcularTriplo() {
+			var num = window.prompt("Digite um número:", "");
+			var triplo = num * 3;
+			document.write("O triplo de " + num + " é " + triplo);
+		}
+		</script>
+	</head>
+
+	<body>
+		<h1>Revisão de JavaScript</h1>
+
+		<p>Construir um script que leia uma quantidade indeterminada de números, calcule e imprima o triplo de cada um, utilizando funcões. A quantidade de números será definida pelo usuário.</p>
+
+		<hr>
+
+		<script>
+			var qtd = window.prompt("Digite a quantidade de números:", "");
+			var i = 1;
+
+			while (i <= qtd) {
+				document.write("<p>");
+				calcularTriplo();
+				document.write("</p>");
+				i++;
+			}
+		</script>
+	</body>
+</html>

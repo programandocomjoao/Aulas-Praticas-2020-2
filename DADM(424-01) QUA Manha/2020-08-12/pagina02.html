@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<title>Página 01</title>
+		<title>Página 02</title>
 		<script>
 		function calcularTriplo() {
 			var num = window.prompt("Digite um número:", "");
@@ -15,10 +15,16 @@
 	<body>
 		<h1>Revisão de JavaScript</h1>
 
-		<p>Construir um script que chame uma função que leia um número, calcule e imprima o seu triplo.</p>
+		<p>Construir um script que leia dez números, calcule e imprima o triplo de cada um, utilizando funcões.</p>
 
 		<hr>
 
-		<p><script>calcularTriplo();</script></p>
+		<script>
+			for (i = 1; i <= 10; i++) {
+				document.write("<p>");
+				calcularTriplo();
+				document.write("</p>");
+			}
+		</script>
 	</body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 04</title>
+		<script>
+			function calcularDelta(a, b, c) {
+				var delta = Math.pow(b, 2) - 4 * a * c;
+				document.write(delta);
+			}
+		</script>
+	</head>
+
+	<body>
+		<h1>Revisão de JavaScript</h1>
+
+		<p>Construir um script que leia os valores de A, B e C e que chame uma função que calcule e imprima o delta.</p>
+
+		<hr>
+
+		<script>
+			var A = window.prompt("Digite o valor de A:", "");
+			var B = window.prompt("Digite o valor de B:", "");
+			var C = window.prompt("Digite o valor de C:", "");
+		</script>
+
+		<p>O delta é <script>calcularDelta(A, B, C);</script></p>
+	</body>
+</html>

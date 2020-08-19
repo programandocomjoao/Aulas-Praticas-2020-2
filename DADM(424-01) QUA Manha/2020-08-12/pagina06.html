@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 06</title>
+		<script>
+			function calcularComprimento(raio) {
+				var c = 2 * Math.PI * raio;
+				return c;
+			}
+
+			function calcularArea(raio) {
+				var a = Math.PI * Math.pow(raio, 2);
+				return a;
+			}
+
+			function calcularVolume(raio) {
+				var v = 3/4 * Math.PI * Math.pow(raio, 3);
+				return v;
+			}
+		</script>
+	</head>
+
+	<body>
+		<h1>Revisão de JavaScript</h1>
+
+		<p>Construir um script que leia o raio de uma esfera e que chame funcões que calculem e retornem o valor do comprimento, área e volume dessa esfera.</p>
+
+		<hr>
+
+		<script>
+			var raio = window.prompt("Digite o raio da esfera:", "");
+		</script>
+
+		<p>O comprimento é <script>document.write(calcularComprimento(raio));</script></p>
+		<p>A área é <script>document.write(calcularArea(raio));</script></p>
+		<p>O volume é <script>document.write(calcularVolume(raio));</script></p>
+	</body>
+</html>
