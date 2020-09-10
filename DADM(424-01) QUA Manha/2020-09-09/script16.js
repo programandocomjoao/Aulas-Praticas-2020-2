@@ -1,10 +1,10 @@
 var fs = require('fs');
 
-fs.rename('arquivoNovo.txt', 'arquivoNovissimo.txt',
+fs.unlink('arquivoFeio.txt', 
     function(err) {
         if (err)
             throw err;
     }
 );
 
-console.log('Arquivo renomeado com sucesso!');
+console.log('Arquivo excluído com sucesso!');
