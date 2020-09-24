@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Animais</title>
+    </head>
+
+    <body>
+        <h1>Cadastro de Animais</h1>
+
+        <form action="gravar23" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Dados do Animal</legend>
+
+                <p><label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" size="30" autofocus>
+                </p>
+
+                <p><label for="ano">Ano de nascimento:</label>
+                <select id="ano" name="ano">
+                    <script>
+                        var d = new Date();
+                        var anoAtual = d.getFullYear();
+                        var anoAntigo = anoAtual - 25;
+
+                        for (i = anoAtual; i >= anoAntigo; i--)
+                            document.write('<option value="' + i + '">' + i + '</option>');
+                    </script>
+                </select></p>
+
+                <fieldset>
+                    <legend>Espécie</legend>
+
+                    <input type="radio" id="canina" name="especie" value="Canina" checked>  
+                    <label for="canina">Canina</label>
+
+                    <input type="radio" id="felina" name="especie" value="Felina">  
+                    <label for="felina">Felina</label>
+                </fieldset>
+
+                <p><label for="raca">Raça:</label>
+                <input type="text" id="raca" name="raca" size="25" list="listaRacas">
+                </p>
+
+                <datalist id="listaRacas">
+                    <option value="Street Dog"></option>
+                    <option value="Street Cat"></option>
+                    <option value="Poodle"></option>
+                    <option value="Pastor Alemão"></option>
+                    <option value="Pastor Belga"></option>
+                    <option value="Bulldog"></option>
+                    <option value="Siamês"></option>
+                    <option value="Ângora"></option>
+                    <option value="Pug"></option>
+                    <option value="Fila Brasileiro"></option>
+                </datalist>
+
+                <p><label for="foto">Foto do animal:</label>
+                <input type="file" id="foto" name="foto">
+                </p>
+
+                <p><input type="submit" value="Cadastrar Animal"></p>
+            </fieldset>
+        </form>
+    </body>
+</html>
