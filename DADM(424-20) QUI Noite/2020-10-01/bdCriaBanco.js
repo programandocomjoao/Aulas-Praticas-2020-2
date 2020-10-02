@@ -12,7 +12,17 @@ conexao.connect(
     function(err) {
         if (err)
             throw err;
-        else
+        else {
             console.log('Conexão estabelecida com sucesso!!!');
+
+            conexao.query('CREATE DATABASE agenda',
+                function(err) {
+                    if (err)
+                        throw err;
+                    else
+                        console.log('Banco de dados criado com sucesso!!!');
+                }
+            );
+        }
     }
 );
