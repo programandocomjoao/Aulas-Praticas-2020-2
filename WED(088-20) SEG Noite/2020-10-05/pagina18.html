@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Página 18</title>
+	</head>
 
+	<body>
+		<h1>Formulário de Cadastro</h1>
+
+		<form>
+			<fieldset>
+				<legend>Identificação do Usuário</legend>
+
+				<p><label for="nome">Nome:</label>
+				<input type="text" id="nome" size="25" maxlength="30" placeholder="Nome completo" autofocus>
+				</p>
+
+				<p><label for="senha">Senha:</label>
+				<input type="password" id="senha" size="8" maxlength="8" placeholder="8 dígitos">
+				</p>
+
+				<p><label for="email">E-mail:</label>
+				<input type="email" id="email" size="30" maxlength="40">
+				</p>
+
+				<fieldset>
+					<legend>Sexo:</legend>
+
+					<input type="radio" id="feminino" name="sexo" value="F">
+					<label for="feminino">Feminino</label>
+
+					<input type="radio" id="masculino" name="sexo" value="M">
+					<label for="masculino">Masculino</label>
+				</fieldset>
+
+				<p><label for="data">Data de nascimento:</label>
+				<input type="date" id="data">
+				</p>
+
+				<p><label for="hora">Hora de nascimento:</label>
+				<input type="time" id="hora">
+				</p>
+			</fieldset>
+
+			<br>
+
+			<fieldset>
+				<legend>Endereço do Usuário:</legend>
+
+				<p><label for="logradouro">Logradouro:</label>
+				<input type="text" id="logradouro" size="30" maxlength="80" placeholder="Rua, Av, Rod, Trav, ...">
+				</p>
+
+				<p><label for="numero">Número:</label>
+				<input type="number" id="numero" min="0" max="99999">	
+				</p>
+
+				<p><label for="estado">Estado:</label>
+				<select id="estado">
+					<optgroup label="Região Sudeste">
+						<option value="ES">Espírito Santo</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="SP">São Paulo</option>
+					</optgroup>
+
+					<optgroup label="Região Sul">
+						<option value="PR">Paraná</option>
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="SC">Santa Catarina</option>
+					</optgroup>
+				</select></p>
+
+				<p><label for="cidade">Cidade:</label>
+				<input type="text" id="cidade" size="30" maxlength="50" list="listaCidades">
+				</p>
+
+				<datalist id="listaCidades">
+					<option value="Duque de Caxias"></option>
+					<option value="Nova Iguaçu"></option>
+					<option value="Belford Roxo"></option>
+					<option value="Nilópolis"></option>
+					<option value="São João de Meriti"></option>
+					<option value="Magé"></option>
+					<option value="Rio de Janeiro"></option>
+					<option value="Niterói"></option>
+					<option value="Rio Bonito"></option>
+					<option value="Nova Hamburgo"></option>
+					<option value="Rio Claro"></option>
+				</datalist>
+			</fieldset>
+
+			<br>
+
+			<fieldset>
+				<legend>Características do Usuário</legend>
+
+				<p><label for="foto">Foto de perfil:</label>
+				<input type="file" id="foto">
+				</p>
+
+				<p><label for="nivel">Nível de conhecimento em programação:</label><br>
+				0 <input type="range" id="nivel" min="0" max="10" step="2"> 10
+				</p>
+
+				<p><label for="cor">Cor da área do usuário:</label>
+				<input type="color" id="color">
+				</p>
+
+				<p><label for="curriculo">Digite um mini-currículo:</label><br>
+				<textarea id="curriculo" cols="50" rows="5"></textarea>
+				</p>
+			</fieldset>
+
+			<p><input type="submit" value="Enviar Dados"></p>
+		</form>
+	</body>
+</html>
