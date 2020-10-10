@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Pessoas</title>
+    </head>
 
+    <body>
+        <h1>Cadastro de Pessoas</h1>
+
+        <form action="bdCadastro" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Dados da Pessoa</legend>
+
+                <p><label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" size="30">
+                </p>
+
+                <p><label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" size="30">
+                </p>
+
+                <p><input type="submit" value="Cadastrar Pessoa"></p>
+            </fieldset>
+        </form>
+    </body>
+</html>
