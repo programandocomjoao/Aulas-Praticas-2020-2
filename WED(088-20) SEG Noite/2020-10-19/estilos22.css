@@ -1,0 +1,32 @@
+body {
+	font-family: verdana;
+}
+
+p {
+	font-size: 11pt;
+	line-height: 18pt;
+}
+
+blockquote {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+address {
+	font-size: 10pt;
+	font-style: normal;
+}
+
+h2 {
+	font-style: italic;
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+h1 {
+	font-variant: small-caps;
+	word-spacing: 10px;
+	letter-spacing: 5px;
+}

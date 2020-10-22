@@ -1,0 +1,21 @@
+@font-face {
+	src: url("fontes/A_Lolita_Scorned.ttf");
+	font-family: "sangue";
+}
+
+body {
+	background-color: black;
+}
+
+h1 {
+	color: red;
+	font-family: sangue;
+	font-weight: normal; /* tira o negrito do <h1> */
+	font-size: 30pt;
+}
+
+p {
+	color: white;
+	font-family: verdana;
+	font-size: 11pt;
+}
