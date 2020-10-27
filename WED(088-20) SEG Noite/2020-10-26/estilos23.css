@@ -1,0 +1,48 @@
+body {
+	font-family: verdana;
+}
+
+p, a {
+	font-size: 11pt;
+}
+
+address {
+	font-size: 10pt;
+	font-style: normal;
+	text-transform: capitalize;
+	text-align: right;
+	text-decoration: line-through;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	/* text-decoration: overline; */
+	text-decoration: underline overline;
+}
+
+a {
+	text-transform: lowercase;
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+	color: orange;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+span {
+	text-transform: none;
+}
+
+p {
+	text-align: justify;
+	text-indent: 50px;
+	line-height: 17pt;
+}
+
+h2 {
+	text-decoration: underline;
+}
