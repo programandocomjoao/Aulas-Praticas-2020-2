@@ -1,0 +1,51 @@
+body {
+	font-family: verdana;
+	background-image: linear-gradient(silver, gray, silver);
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+p {
+	text-align: justify;
+	text-indent: 50px;
+	font-size: 11pt;
+	line-height: 20pt;
+}
+
+blockquote {
+	text-align: right;
+	font-size: 11pt;
+	line-height: 16pt;
+	font-style: italic;
+}
+
+address {
+	text-align: center;
+	font-size: 10pt;
+	font-style: normal;
+}
+
+div#conteudo {
+	background-color: white;
+	color: #666666;
+	/* width: 700px; */
+	width: 90%;
+	/* padding: 10px; */
+	padding: 2%;
+	border: black 1px solid;
+	/* margin: 30px; */
+	margin: 0 auto;
+	box-shadow: 5px 5px 10px black;
+}
+
+div#rodape {
+	background-color: #666666;
+	color: white;
+	width: 90%;
+	padding: 2%;
+	border: black 1px solid;
+	margin: 0 auto;
+	box-shadow: 5px 5px 10px black;
+}
