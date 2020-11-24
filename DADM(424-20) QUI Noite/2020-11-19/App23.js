@@ -3,7 +3,11 @@ import { View, StyleSheet } from 'react-native';
 
 const estilos = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    //flexDirection: 'column',
+    //flexDirection: 'column-reverse',
+    //flexDirection: 'row',
+    flexDirection: 'row-reverse',
   }
 });
 
